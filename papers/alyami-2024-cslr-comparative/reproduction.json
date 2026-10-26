@@ -1,0 +1,1229 @@
+{
+  "paper_id": "8d2b672d06ddb561f890798d7c1e434389c34202",
+  "agents": [
+    {
+      "agent_id": "claude-opus-5-5-claude-code",
+      "model": "Claude Opus 5.5",
+      "model_id": "claude-opus-5-5",
+      "harness": "Claude Code",
+      "harness_version": "2.1.310",
+      "scope": "Assignment intake, paper/version resolution, source search, dataset inspection on the repro-sign Modal workspace, and target-gate preparation.",
+      "evidence": [
+        "Session system context identifies the model as Opus 5.5 with model ID claude-opus-5-5 running in Claude Code (2026-10-26).",
+        "`claude --version` in the session returned 2.1.310 (Claude Code)."
+      ]
+    }
+  ],
+  "assignment": {
+    "kind": "direct_user_request",
+    "source": {
+      "path": "reproductions-8d2b672d06ddb561f890798d7c1e434389c34202-2026-10-26.json",
+      "sha256": "c3cee598f9536e37d49b14ab413df3b8da75dac4a24bf1f275c286459f4eea7d"
+    },
+    "detail": "Operator supplied a single 'reproductions' collection export (not a top-level candidate array with a confirmation field) plus the arXiv v1 PDF. The embedded paper record has status 'final'; the export has no 'confirmation' field, so ingest_candidate.py cannot accept it and it is recorded as a direct assignment preserving the export (emails redacted). Queue fields are research leads only.",
+    "record": {
+      "assignees": [
+        "[redacted]"
+      ],
+      "collectionId": "pbc_1548343306",
+      "collectionName": "reproductions",
+      "comments": "",
+      "expand": {
+        "paper": {
+          "area_of_slp": [
+            "Recognition",
+            "Segmentation / tokenization"
+          ],
+          "code_repos": [
+            "https://hamzah-luqman.github.io/ArabSign/index.html"
+          ],
+          "collectionId": "pbc_3632733556",
+          "collectionName": "papers",
+          "comments": "",
+          "compute_requirements": "NVIDIA RTX A6000 with two 48GB GPUs, no training times mentioned",
+          "copied_scores": "no",
+          "datasets": [
+            "3bo0mvnzlglpigr",
+            "powr77mliwaiqsm",
+            "jtn1aoc09ryji9i"
+          ],
+          "expand": {
+            "datasets": [
+              {
+                "assignees": [],
+                "available": "yes",
+                "collectionId": "pbc_3710182791",
+                "collectionName": "datasets",
+                "comments": "German Sign Language continuous recognition, weather domain",
+                "contact_dates": [],
+                "correspondence": "",
+                "id": "3bo0mvnzlglpigr",
+                "license": "CC BY-SA 3.0",
+                "name": "PHOENIX-2014",
+                "on_modal": "",
+                "permission_model_weights": "",
+                "permission_to_reproduce": "",
+                "signed_languages": [
+                  "gsg"
+                ],
+                "spoken_languages": [
+                  "deu"
+                ],
+                "url": [
+                  "https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/"
+                ]
+              },
+              {
+                "assignees": [
+                  "[redacted]"
+                ],
+                "available": "yes",
+                "collectionId": "pbc_3710182791",
+                "collectionName": "datasets",
+                "comments": "download provided by Hamzah\n\nWebsite mentions availability upon request: \"To download any of these modalities, please send an email to Hamzah Luqman ([redacted])\"\n\nHamzah Luqman. Arabsign: A multi-modality dataset and benchmark\nfor continuous arabic sign language recognition. In 17th IEEE International Conference on Automatic Face and Gesture Recognition, FG\n2023, Waikoloa Beach, HI, USA, January 5-8, 2023, pages 1–8. IEEE,\n2023.",
+                "contact_dates": [],
+                "correspondence": "contacted_got_reply",
+                "id": "powr77mliwaiqsm",
+                "license": "NC only",
+                "name": "ArabSign",
+                "on_modal": "yes",
+                "permission_model_weights": "yes",
+                "permission_to_reproduce": "yes",
+                "signed_languages": [
+                  "qaa"
+                ],
+                "spoken_languages": [
+                  "ara"
+                ],
+                "url": [
+                  "https://hamzah-luqman.github.io/ArabSign/index.html",
+                  "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10042720"
+                ]
+              },
+              {
+                "assignees": [],
+                "available": "yes",
+                "collectionId": "pbc_3710182791",
+                "collectionName": "datasets",
+                "comments": "dataset page refers to Google drive folder with .tgz files.\n\nGSL (Adaloglou et al., 2020) is the Greek Sign Language dataset maintained by the\nVisual Computing Lab at the Information Technologies Institute available at: https://vcl.iti.\ngr/dataset/gsl/",
+                "contact_dates": [],
+                "correspondence": "",
+                "id": "jtn1aoc09ryji9i",
+                "license": "Not found",
+                "name": "GSL",
+                "on_modal": "",
+                "permission_model_weights": "",
+                "permission_to_reproduce": "",
+                "signed_languages": [],
+                "spoken_languages": [],
+                "url": [
+                  "https://vcl.iti.gr/dataset/gsl/",
+                  "https://drive.google.com/drive/folders/18ruYi9MULMm1KQtUgdIhN0m-XilRhncg"
+                ]
+              }
+            ],
+            "metrics": [
+              {
+                "collectionId": "pbc_3017397517",
+                "collectionName": "metrics",
+                "comments": "Word error rate",
+                "id": "q7nnxrx71w67jl9",
+                "name": "WER",
+                "url": []
+              }
+            ]
+          },
+          "finalized_by": "[redacted]",
+          "flag_reason": "",
+          "id": "it6rrp9bmlaisin",
+          "includes_human_evaluation": "no",
+          "main_experiment_has_ranking": "yes",
+          "metrics": [
+            "q7nnxrx71w67jl9"
+          ],
+          "paper_id": "8d2b672d06ddb561f890798d7c1e434389c34202",
+          "pdf_url": "https://arxiv.org/abs/2406.12369",
+          "peer_reviewed": "yes",
+          "potential_ethical_concerns": "no",
+          "rejection_reason": "",
+          "status": "final",
+          "status_history": [
+            {
+              "after": "final",
+              "before": "needs_review",
+              "by": "[redacted]",
+              "when": "2026-08-07T10:54:03.649Z"
+            }
+          ],
+          "sub_area_of_slp": [
+            "Continuous signing videos"
+          ],
+          "textual_conclusion": "The findings of this study showed that there are inherent tradeoffs between adapting to signer variability and handling unseen\nsentences. Nevertheless, CorrNet was the most robust model across different settings and sign languages, due to its supreme features modeling capability.",
+          "title": "A Comparative Study of Continuous Sign Language Recognition Techniques",
+          "venue": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+          "what_to_reproduce": "Table 1",
+          "year": 2024
+        }
+      },
+      "id": "v7arbp1awg5s1k7",
+      "paper": "it6rrp9bmlaisin",
+      "status": "in_progress",
+      "url": []
+    }
+  },
+  "paper": {
+    "title": "A Comparative Study of Continuous Sign Language Recognition Techniques",
+    "citation": "Sarah Alyami and Hamzah Luqman. A Comparative Study of Continuous Sign Language Recognition Techniques. arXiv:2406.12369v1, 2024; published version in Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops, 2025, pp. 4923-4932.",
+    "url": "https://arxiv.org/abs/2406.12369v1",
+    "pdf_sha256": "db652a81563f9e5c7901ba37df4b69164c28c9acfae858ffff682441ae9eecf6",
+    "accessed_at": "2026-10-26",
+    "versions": [
+      {
+        "version_id": "arxiv-v1",
+        "url": "https://arxiv.org/pdf/2406.12369v1",
+        "pdf_sha256": "db652a81563f9e5c7901ba37df4b69164c28c9acfae858ffff682441ae9eecf6",
+        "pages": 7,
+        "note": "PDF supplied with the assignment; the only arXiv version as of 2026-10-26. Table I: 5 models x 6 settings (Phoenix2014 SD/SI, ArabSign SD/SI, GrSL SI/Unseen-Sent); Table II: ArabSign per-signer SI. All models 40 epochs, LR /5 at 20 and 35."
+      },
+      {
+        "version_id": "iccvw-2025",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025W/MSLR/papers/Alyami_A_Comparative_Study_of_Continuous_Sign_Language_Recognition_Techniques_ICCVW_2025_paper.pdf",
+        "pdf_sha256": "922a2038faac61b3eacbefb5be417e5dbf126b3655814005189f06391dd5aa63",
+        "pages": 10,
+        "note": "Venue named in the queue record. Table 1: 7 models (adds Swin-MSTP, SlowFastSign) x 8 settings (adds CSL-Daily Unseen-Sent and a custom CSL-Daily Signer-Indep split); TLP/SEN/SlowFastSign trained 80 epochs (LR steps 30/60), Swin-MSTP 60 epochs; beam width 10. Several shared values are rounded or changed (e.g. SMKD Phoenix SD 22.31->22.1, SEN GrSL SI 8.09->8.0)."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "vac-cslr",
+      "kind": "code",
+      "url": "https://github.com/VIPL-SLP/VAC_CSLR",
+      "revision_or_sha256": "71f3e0334fbc8cecc7ce9816ec69781068abaac0",
+      "role": "Official VAC implementation (Apache-2.0); README documents the VAC+SMKD configuration (share_classifier, weight_norm). Candidate for VAC and SMKD rows."
+    },
+    {
+      "source_id": "tlp",
+      "kind": "code",
+      "url": "https://github.com/hulianyuyy/Temporal-Lift-Pooling",
+      "revision_or_sha256": "21be215c6ba749d98ce6a51f4b84cc9d5029bfe6",
+      "role": "Official TLP implementation (no license file). Candidate for TLP rows."
+    },
+    {
+      "source_id": "sen",
+      "kind": "code",
+      "url": "https://github.com/hulianyuyy/SEN_CSLR",
+      "revision_or_sha256": "c9a4c7ebd0489e22496c00f9f31d930c0d968ad8",
+      "role": "Official SEN implementation (Apache-2.0). Candidate for SEN rows."
+    },
+    {
+      "source_id": "corrnet",
+      "kind": "code",
+      "url": "https://github.com/hulianyuyy/CorrNet",
+      "revision_or_sha256": "a812814f4deefda0b75ab1dcc90b106c62912263",
+      "role": "Official CorrNet implementation (no license file). Candidate for CorrNet rows."
+    }
+  ],
+  "source_search": {
+    "accessed_at": "2026-10-26",
+    "conclusion": "No code released for this comparative study itself; the paper states it ran each model's open-source implementation under its authors' settings. Selected artifacts are the per-model official repositories (preference level 1/2 per model).",
+    "locations": [
+      "arXiv abs page 2406.12369 (only v1; no code link)",
+      "ICCV 2025 Workshops open-access page (pdf/arXiv/bibtex only, no code or supplement)",
+      "GitHub repos of Hamzah-Luqman (ArabSign site repo, SWIN-MSTP, others; no comparative-study repo)",
+      "GitHub search: SMKD, self-mutual distillation, ArabSign, GrSL CSLR",
+      "Web search: exact title + authors + github"
+    ]
+  },
+  "status": {
+    "pipeline": null,
+    "numerical_agreement": "not_assessed",
+    "numerical_agreement_basis": "Not assessed: no full run has been launched; the compute gate is open.",
+    "preference_level": 2,
+    "blocker": null,
+    "preference_level_basis": "Every model has pinned official code (level 1), but the sibling yu-2025-cvsign attempt on the same CorrNet/VAC code family showed it needs minimal correctness patches on current PyTorch (ctcdecode C++17 build, CTC loss without cuDNN), plus dataset adapters for ArabSign and GrSL; expected level 2, to be confirmed by this paper's own preflight.",
+    "pipeline_note": "Attempt paused 2026-10-26 at open gate compute-full-table before any data population, container build or run. pipeline and blocker are left null deliberately: AGENTS.md forbids blocked_on_compute before the #repro-sign-team-r discussion, and no target has a terminal result yet."
+  },
+  "datasets": [
+    {
+      "dataset_id": "phoenix2014",
+      "name": "RWTH-PHOENIX-Weather 2014",
+      "version_or_subset": "phoenix-2014.v3 release: multisigner (Signer-Dep) and signerindependent-SI5 (Signer-Indep) annotations; fullFrame-210x260px PNG frames from the multisigner tree",
+      "sources": [
+        {
+          "url": "https://www-i6.informatik.rwth-aachen.de/ftp/pub/rwth-phoenix/2016/phoenix-2014.v3.tar.gz",
+          "accessed_at": "2026-10-26"
+        }
+      ],
+      "license_or_permission": "CC BY-NC-SA (RWTH release terms; queue record lists CC BY-SA 3.0); non-commercial research processing on the already-populated study Volume",
+      "cloud_processing_allowed": true,
+      "modal_volume": "datasets",
+      "modal_path": "rwth-phoenix-2014/raw/phoenix2014-release",
+      "splits": [
+        {
+          "name": "multisigner-train",
+          "sample_count": 5672,
+          "files": [
+            {
+              "path": "phoenix-2014-multisigner/annotations/manual/train.corpus.csv",
+              "sha256": "ebd3a83d0bb81b153e4c2acf2e6fcbc1ba6aa8211176017154a7213629a19947"
+            }
+          ]
+        },
+        {
+          "name": "multisigner-dev",
+          "sample_count": 540,
+          "files": [
+            {
+              "path": "phoenix-2014-multisigner/annotations/manual/dev.corpus.csv",
+              "sha256": "42ba319d167b96c90832bb90cf5da9059042ebc826e400bba4f6674a5d840cef"
+            }
+          ]
+        },
+        {
+          "name": "multisigner-test",
+          "sample_count": 629,
+          "files": [
+            {
+              "path": "phoenix-2014-multisigner/annotations/manual/test.corpus.csv",
+              "sha256": "e8f05c6573d9546cd9f5b8528663b4924930800bc34b7f2fcc15708316166990"
+            }
+          ]
+        },
+        {
+          "name": "SI5-train",
+          "sample_count": 4376,
+          "files": [
+            {
+              "path": "phoenix-2014-signerindependent-SI5/annotations/manual/train.SI5.corpus.csv",
+              "sha256": "4780717a44c92e43897842b33f2042ef9f3b0678bbfd28090de2f0f89c18bd09"
+            }
+          ]
+        },
+        {
+          "name": "SI5-dev",
+          "sample_count": 111,
+          "files": [
+            {
+              "path": "phoenix-2014-signerindependent-SI5/annotations/manual/dev.SI5.corpus.csv",
+              "sha256": "5c1595bb466856bebbba866786e53d06ff278d610d23c7e7255f1ea7ce840438"
+            }
+          ]
+        },
+        {
+          "name": "SI5-test",
+          "sample_count": 180,
+          "files": [
+            {
+              "path": "phoenix-2014-signerindependent-SI5/annotations/manual/test.SI5.corpus.csv",
+              "sha256": "cf0eb8a8e0325fa6524f4eb69d1761010df04b01146962a41fbe44e9b1cf277a"
+            }
+          ]
+        }
+      ],
+      "verification": "Verified 2026-10-26: multisigner train/dev/test frame folders 5672/540/629 present; SI5 corpus files (train 4376, dev 111, test 180 = Signer05 only) all resolve to existing multisigner frame folders in the matching split, so the SI5 split needs no extra data.",
+      "deviations": []
+    },
+    {
+      "dataset_id": "arabsign",
+      "name": "ArabSign",
+      "version_or_subset": "RGB modality, per-signer archives 01-06.7z (Kinect V2, 1920x1080, 30 fps), 9,335 samples, 50 sentences, 6 signers",
+      "sources": [
+        {
+          "url": "https://hamzah-luqman.github.io/ArabSign/index.html",
+          "accessed_at": "2026-10-26"
+        },
+        {
+          "url": "https://github.com/Hamzah-Luqman/ArabSign/raw/main/ArabSign-EncoderDec.zip",
+          "accessed_at": "2026-10-26"
+        }
+      ],
+      "license_or_permission": "Non-commercial; obtained from the dataset author on request (Team S); queue record states permission to reproduce and to publish weights",
+      "cloud_processing_allowed": true,
+      "modal_volume": "datasets",
+      "modal_path": "arab-sign",
+      "splits": [
+        {
+          "name": "signer-dep-trainval",
+          "sample_count": 7492,
+          "note": "union of <signer>_train.csv; paper's 6,783 train / 709 val partition unpublished",
+          "files": [
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/01_train.csv",
+              "sha256": "ef59dbce5db6b87e3716da755666021001af772fe737268cb9a234b93acf7b09"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/02_train.csv",
+              "sha256": "5dde591fce22a5c0bd314d6baa86c2ab77865c9cfbf5cad1f19a87c05e1cdadf"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/03_train.csv",
+              "sha256": "acc9d61c121f3374d3e964f00dcc256e2eb5b04cd8eb215927de71d73bab2db3"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/04_train.csv",
+              "sha256": "8830c68d34132b60fb5e373808b3e29e00447c9cb2cd71daa0c0a8c0dd6dd51b"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/05_train.csv",
+              "sha256": "8e9ab083130529536b44f74d94d421a326e4d8c5f8709481732c4f750ba3cf17"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/06_train.csv",
+              "sha256": "0c1498e7ebd9eb551e5d59e9ecd6b75411b00794296fdc76228f9e21bfe5b631"
+            }
+          ]
+        },
+        {
+          "name": "signer-dep-test",
+          "sample_count": 1843,
+          "note": "union of <signer>_test.csv",
+          "files": [
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/01_test.csv",
+              "sha256": "bf73a78dbd996513fd568523c5e21da23c183cb212febee36fcb66c5a207f728"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/02_test.csv",
+              "sha256": "be9fc29cd85e7ec4133a52d1d52a18dc761ef92184f9999e298c12cfaf03f1fe"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/03_test.csv",
+              "sha256": "036255ffa386dbe259cdc3924acc9d38556d9bd23e8e96308b17f39c65205919"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/04_test.csv",
+              "sha256": "23eb1667940a1bce0bd70f750f966c5aa9a4948f3fa27797ab9e5f38e4fc38ee"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/05_test.csv",
+              "sha256": "60a5478056511ede26215ea28453f5a6b78440c8a6fcb33d18787e5e3997648f"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/06_test.csv",
+              "sha256": "0d382717c4a99a8c3905acee2641ed205a4d0cc8d78c56f82ea622d2613a62c3"
+            }
+          ]
+        },
+        {
+          "name": "leave-one-signer-out",
+          "sample_count": 9335,
+          "note": "6 folds, one signer held out per fold",
+          "files": [
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/01_train.csv",
+              "sha256": "ef59dbce5db6b87e3716da755666021001af772fe737268cb9a234b93acf7b09"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/02_train.csv",
+              "sha256": "5dde591fce22a5c0bd314d6baa86c2ab77865c9cfbf5cad1f19a87c05e1cdadf"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/03_train.csv",
+              "sha256": "acc9d61c121f3374d3e964f00dcc256e2eb5b04cd8eb215927de71d73bab2db3"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/04_train.csv",
+              "sha256": "8830c68d34132b60fb5e373808b3e29e00447c9cb2cd71daa0c0a8c0dd6dd51b"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/05_train.csv",
+              "sha256": "8e9ab083130529536b44f74d94d421a326e4d8c5f8709481732c4f750ba3cf17"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/06_train.csv",
+              "sha256": "0c1498e7ebd9eb551e5d59e9ecd6b75411b00794296fdc76228f9e21bfe5b631"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/01_test.csv",
+              "sha256": "bf73a78dbd996513fd568523c5e21da23c183cb212febee36fcb66c5a207f728"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/02_test.csv",
+              "sha256": "be9fc29cd85e7ec4133a52d1d52a18dc761ef92184f9999e298c12cfaf03f1fe"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/03_test.csv",
+              "sha256": "036255ffa386dbe259cdc3924acc9d38556d9bd23e8e96308b17f39c65205919"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/04_test.csv",
+              "sha256": "23eb1667940a1bce0bd70f750f966c5aa9a4948f3fa27797ab9e5f38e4fc38ee"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/05_test.csv",
+              "sha256": "60a5478056511ede26215ea28453f5a6b78440c8a6fcb33d18787e5e3997648f"
+            },
+            {
+              "path": "ArabSign-EncoderDec.zip:EncoderDec/data/06_test.csv",
+              "sha256": "0d382717c4a99a8c3905acee2641ed205a4d0cc8d78c56f82ea622d2613a62c3"
+            }
+          ]
+        }
+      ],
+      "verification": "RGB per-signer archives 01-06.7z (3.07-3.47 GB each) + ArabSignGroundTruth.txt on Volume, not yet extracted. Signer-Dep test split: union of the dataset author's per-signer <signer>_test.csv files from ArabSign-EncoderDec.zip (github.com/Hamzah-Luqman/ArabSign @ 8f6e127a054052228027d6da98005f991d300a7b, zip sha256 6980aec2beea93fb2299198f7031991f684bb064c8093343128eb13789318eb0) = 1843 samples, matching the 1843 test count stated in the ICCVW version; train csvs total 7492 = 6783 train + 709 val, but the 709-sample validation subset is not published (guess required).",
+      "deviations": []
+    },
+    {
+      "dataset_id": "grsl",
+      "name": "Continuous Greek Sign Language (GSL), Adaloglou et al.",
+      "version_or_subset": "GSL_continuous RGB (Zenodo 3941811 v1 / Google Drive GSL_continuous.tar.gz), 10,290 sentence instances, 7 signers",
+      "sources": [
+        {
+          "url": "https://zenodo.org/records/3941811",
+          "accessed_at": "2026-10-26"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/18ruYi9MULMm1KQtUgdIhN0m-XilRhncg",
+          "accessed_at": "2026-10-26"
+        },
+        {
+          "url": "https://vcl.iti.gr/dataset/gsl/",
+          "accessed_at": "2026-10-26"
+        }
+      ],
+      "license_or_permission": "CC BY 4.0 (Zenodo record 3941811 license field)",
+      "cloud_processing_allowed": true,
+      "modal_volume": "datasets",
+      "modal_path": "gsl-continuous",
+      "splits": [
+        {
+          "name": "SI-train",
+          "sample_count": 8821,
+          "files": [
+            {
+              "path": "Drive GSL_continuous_files/GSL SI/gsl_split_SI_train.csv",
+              "sha256": "41e2e6d27df79a3cec2a6d14a73960442db5eaca58c7f144de404fc4f72cbfc8"
+            }
+          ]
+        },
+        {
+          "name": "SI-dev",
+          "sample_count": 587,
+          "files": [
+            {
+              "path": "Drive GSL_continuous_files/GSL SI/gsl_split_SI_dev.csv",
+              "sha256": "11d5f9534085904d9c68ac5cd56ff8c11d8602a6780dd0d70cd2baabcb85ad11"
+            }
+          ]
+        },
+        {
+          "name": "SI-test",
+          "sample_count": 880,
+          "files": [
+            {
+              "path": "Drive GSL_continuous_files/GSL SI/gsl_split_SI_test.csv",
+              "sha256": "eee97832df609932d3568601d3cdb472411270bbf10f05b7286b7f43ee69b534"
+            }
+          ]
+        },
+        {
+          "name": "unseen-train",
+          "sample_count": 8189,
+          "files": [
+            {
+              "path": "Drive GSL_continuous_files/GSL SD/gsl_train_unseen.txt",
+              "sha256": "f63e85fc5a950994bfd486d99e73661b6a8a6a78a5063cb78da3ade6cbae8a91"
+            }
+          ]
+        },
+        {
+          "name": "unseen-dev",
+          "sample_count": 1063,
+          "files": [
+            {
+              "path": "Drive GSL_continuous_files/GSL SD/gsl_dev_unseen.txt",
+              "sha256": "eace26ce6cafb95a8b8dfc707ff2dbbe0404b69262e85e107c1961cd89fd6033"
+            }
+          ]
+        },
+        {
+          "name": "unseen-test",
+          "sample_count": 1043,
+          "files": [
+            {
+              "path": "Drive GSL_continuous_files/GSL SD/gsl_test_unseen.txt",
+              "sha256": "17f551c749843580cd79bb13fbe73d9b00618dff38d79a9e9f36ca67d8c3fff8"
+            }
+          ]
+        }
+      ],
+      "split_files_sha256": {
+        "gsl_split_SI_train.csv": "41e2e6d27df79a3cec2a6d14a73960442db5eaca58c7f144de404fc4f72cbfc8",
+        "gsl_split_SI_dev.csv": "11d5f9534085904d9c68ac5cd56ff8c11d8602a6780dd0d70cd2baabcb85ad11",
+        "gsl_split_SI_test.csv": "eee97832df609932d3568601d3cdb472411270bbf10f05b7286b7f43ee69b534",
+        "gsl_train_unseen.txt": "f63e85fc5a950994bfd486d99e73661b6a8a6a78a5063cb78da3ade6cbae8a91",
+        "gsl_dev_unseen.txt": "eace26ce6cafb95a8b8dfc707ff2dbbe0404b69262e85e107c1961cd89fd6033",
+        "gsl_test_unseen.txt": "17f551c749843580cd79bb13fbe73d9b00618dff38d79a9e9f36ca67d8c3fff8"
+      },
+      "verification": "Absent from datasets Volume; acquisition permitted (data.sh to /datasets/gsl-continuous). Split files from the dataset's public Drive folder: 'GSL SI' gsl_split_SI_{train,dev,test}.csv = 8821/587/880 lines (train signers 1,2,4,5,6,7; dev/test signer 3) = paper's Signer-Indep; 'GSL SD' folder gsl_{train,dev,test}_unseen.txt = 8189/1063/1043 lines, 0 of 1043 test sentences occur in train (45 unique test sentences) = paper's Unseen-Sent.",
+      "deviations": [
+        "Not yet populated: /datasets/gsl-continuous is absent; acquisition deferred at the compute gate (operator chose to stop before data work). Line counts above are split-file lines; the SI dev/test files lack a trailing newline so they hold 588/881 entries, matching Zenodo's stated 588/881."
+      ]
+    }
+  ],
+  "metric_definitions": [
+    {
+      "metric_id": "wer",
+      "name": "Word error rate (gloss level)",
+      "direction": "lower_is_better",
+      "implementation": "Each pinned upstream repo's evaluation: NIST SCTK sclite over CTM hypotheses vs STM references (evaluation/slr_eval), as selected by evaluate_tool: sclite in configs/baseline.yaml",
+      "version": "SCTK commit to be pinned in the Dockerfile (yu-2025-cvsign uses 9688a26882a688132a5e414cadcb4c19b6fffaba)",
+      "aggregation": "corpus-level (S+D+I)/N over the split (paper Eq. 1); ArabSign Signer-Indep = arithmetic mean of 6 per-fold WERs (Table II)",
+      "unit_or_scale": "percent"
+    }
+  ],
+  "experiments": [
+    {
+      "experiment_id": "vac-phoenix2014",
+      "system": "VAC: VAC_CSLR configs/baseline.yaml with loss SeqCTC 1 + ConvCTC 1 (+ Dist per VAC README); overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "vac-cslr",
+      "dataset_id": "phoenix2014",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV Datasets: multi-signer set for Signer-Dep, signer-5 held out for Signer-Indep; Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "vac-arabsign",
+      "system": "VAC: VAC_CSLR configs/baseline.yaml with loss SeqCTC 1 + ConvCTC 1 (+ Dist per VAC README); overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "vac-cslr",
+      "dataset_id": "arabsign",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: ArabSign Signer-Dep, and leave-one-signer-out following [8], six trials averaged; Tables I and II; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "vac-grsl",
+      "system": "VAC: VAC_CSLR configs/baseline.yaml with loss SeqCTC 1 + ConvCTC 1 (+ Dist per VAC README); overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "vac-cslr",
+      "dataset_id": "grsl",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: GrSL Signer-Indep (signer-3 held out) and Unseen-Sent (10% of sentences held out); Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "smkd-phoenix2014",
+      "system": "SMKD: VAC_CSLR with share_classifier: True, weight_norm: True (README VAC+SMKD setting); overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "vac-cslr",
+      "dataset_id": "phoenix2014",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV Datasets: multi-signer set for Signer-Dep, signer-5 held out for Signer-Indep; Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "smkd-arabsign",
+      "system": "SMKD: VAC_CSLR with share_classifier: True, weight_norm: True (README VAC+SMKD setting); overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "vac-cslr",
+      "dataset_id": "arabsign",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: ArabSign Signer-Dep, and leave-one-signer-out following [8], six trials averaged; Tables I and II; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "smkd-grsl",
+      "system": "SMKD: VAC_CSLR with share_classifier: True, weight_norm: True (README VAC+SMKD setting); overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "vac-cslr",
+      "dataset_id": "grsl",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: GrSL Signer-Indep (signer-3 held out) and Unseen-Sent (10% of sentences held out); Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "tlp-phoenix2014",
+      "system": "TLP: Temporal-Lift-Pooling configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "tlp",
+      "dataset_id": "phoenix2014",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV Datasets: multi-signer set for Signer-Dep, signer-5 held out for Signer-Indep; Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "tlp-arabsign",
+      "system": "TLP: Temporal-Lift-Pooling configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "tlp",
+      "dataset_id": "arabsign",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: ArabSign Signer-Dep, and leave-one-signer-out following [8], six trials averaged; Tables I and II; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "tlp-grsl",
+      "system": "TLP: Temporal-Lift-Pooling configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "tlp",
+      "dataset_id": "grsl",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: GrSL Signer-Indep (signer-3 held out) and Unseen-Sent (10% of sentences held out); Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "sen-phoenix2014",
+      "system": "SEN: SEN_CSLR configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "sen",
+      "dataset_id": "phoenix2014",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV Datasets: multi-signer set for Signer-Dep, signer-5 held out for Signer-Indep; Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "sen-arabsign",
+      "system": "SEN: SEN_CSLR configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "sen",
+      "dataset_id": "arabsign",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: ArabSign Signer-Dep, and leave-one-signer-out following [8], six trials averaged; Tables I and II; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "sen-grsl",
+      "system": "SEN: SEN_CSLR configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "sen",
+      "dataset_id": "grsl",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: GrSL Signer-Indep (signer-3 held out) and Unseen-Sent (10% of sentences held out); Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "corrnet-phoenix2014",
+      "system": "CorrNet: CorrNet configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "corrnet",
+      "dataset_id": "phoenix2014",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV Datasets: multi-signer set for Signer-Dep, signer-5 held out for Signer-Indep; Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "corrnet-arabsign",
+      "system": "CorrNet: CorrNet configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "corrnet",
+      "dataset_id": "arabsign",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: ArabSign Signer-Dep, and leave-one-signer-out following [8], six trials averaged; Tables I and II; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    },
+    {
+      "experiment_id": "corrnet-grsl",
+      "system": "CorrNet: CorrNet configs/baseline.yaml; overridden only to Adam base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2 (gate protocol-lr-epochs)",
+      "source_id": "corrnet",
+      "dataset_id": "grsl",
+      "required_seeds": [
+        0
+      ],
+      "checkpoint_rule": "Lowest dev WER across per-epoch evaluations (upstream main.py rule); for ArabSign leave-one-signer-out folds, which have no published dev set, the rule is still to be fixed before launch. Paper states no rule.",
+      "paper_evidence": "arXiv v1 Sec. IV: GrSL Signer-Indep (signer-3 held out) and Unseen-Sent (10% of sentences held out); Table I; Sec. III model description; Experiments Setup paragraph (Adam, 40 epochs, batch 2, lr 1e-3 steps 20/35, 256->224 crop, 20% temporal scaling, 50% hflip)."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "vac-phoenix2014-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 multisigner (Signer-Dep) official test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "vac-phoenix2014",
+      "original_value": 21.94
+    },
+    {
+      "target_id": "vac-phoenix2014-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 signer-independent SI5 test split (signer 5 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "vac-phoenix2014",
+      "original_value": 40.4
+    },
+    {
+      "target_id": "vac-arabsign-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "ArabSign official Signer-Dep test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "vac-arabsign",
+      "original_value": 0.2787
+    },
+    {
+      "target_id": "vac-arabsign-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I (avg column of Table II)",
+      "split": "ArabSign leave-one-signer-out, 6 folds; value is the mean of the 6 per-signer WERs in Table II",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated; mean of 6 leave-one-signer-out folds",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "vac-arabsign",
+      "original_value": 6.97
+    },
+    {
+      "target_id": "vac-grsl-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous signer-independent split (signer 3 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "vac-grsl",
+      "original_value": 29.6
+    },
+    {
+      "target_id": "vac-grsl-unseen-sent",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous unseen-sentence split (10% of sentences held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "vac-grsl",
+      "original_value": 74.92
+    },
+    {
+      "target_id": "smkd-phoenix2014-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 multisigner (Signer-Dep) official test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "smkd-phoenix2014",
+      "original_value": 22.31
+    },
+    {
+      "target_id": "smkd-phoenix2014-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 signer-independent SI5 test split (signer 5 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "smkd-phoenix2014",
+      "original_value": 43.08
+    },
+    {
+      "target_id": "smkd-arabsign-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "ArabSign official Signer-Dep test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "smkd-arabsign",
+      "original_value": 0.2091
+    },
+    {
+      "target_id": "smkd-arabsign-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I (avg column of Table II)",
+      "split": "ArabSign leave-one-signer-out, 6 folds; value is the mean of the 6 per-signer WERs in Table II",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated; mean of 6 leave-one-signer-out folds",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "smkd-arabsign",
+      "original_value": 4.24
+    },
+    {
+      "target_id": "smkd-grsl-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous signer-independent split (signer 3 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "smkd-grsl",
+      "original_value": 30.8
+    },
+    {
+      "target_id": "smkd-grsl-unseen-sent",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous unseen-sentence split (10% of sentences held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "smkd-grsl",
+      "original_value": 61.1
+    },
+    {
+      "target_id": "tlp-phoenix2014-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 multisigner (Signer-Dep) official test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "tlp-phoenix2014",
+      "original_value": 22.0
+    },
+    {
+      "target_id": "tlp-phoenix2014-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 signer-independent SI5 test split (signer 5 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "tlp-phoenix2014",
+      "original_value": 35.7
+    },
+    {
+      "target_id": "tlp-arabsign-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "ArabSign official Signer-Dep test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "tlp-arabsign",
+      "original_value": 0.2439
+    },
+    {
+      "target_id": "tlp-arabsign-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I (avg column of Table II)",
+      "split": "ArabSign leave-one-signer-out, 6 folds; value is the mean of the 6 per-signer WERs in Table II",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated; mean of 6 leave-one-signer-out folds",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "tlp-arabsign",
+      "original_value": 2.9
+    },
+    {
+      "target_id": "tlp-grsl-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous signer-independent split (signer 3 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "tlp-grsl",
+      "original_value": 6.4
+    },
+    {
+      "target_id": "tlp-grsl-unseen-sent",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous unseen-sentence split (10% of sentences held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "tlp-grsl",
+      "original_value": 75.5
+    },
+    {
+      "target_id": "sen-phoenix2014-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 multisigner (Signer-Dep) official test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "sen-phoenix2014",
+      "original_value": 20.2
+    },
+    {
+      "target_id": "sen-phoenix2014-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 signer-independent SI5 test split (signer 5 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "sen-phoenix2014",
+      "original_value": 34.4
+    },
+    {
+      "target_id": "sen-arabsign-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "ArabSign official Signer-Dep test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "sen-arabsign",
+      "original_value": 0.2962
+    },
+    {
+      "target_id": "sen-arabsign-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I (avg column of Table II)",
+      "split": "ArabSign leave-one-signer-out, 6 folds; value is the mean of the 6 per-signer WERs in Table II",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated; mean of 6 leave-one-signer-out folds",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "sen-arabsign",
+      "original_value": 7.22
+    },
+    {
+      "target_id": "sen-grsl-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous signer-independent split (signer 3 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "sen-grsl",
+      "original_value": 8.09
+    },
+    {
+      "target_id": "sen-grsl-unseen-sent",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous unseen-sentence split (10% of sentences held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "sen-grsl",
+      "original_value": 74.8
+    },
+    {
+      "target_id": "corrnet-phoenix2014-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 multisigner (Signer-Dep) official test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "corrnet-phoenix2014",
+      "original_value": 19.9
+    },
+    {
+      "target_id": "corrnet-phoenix2014-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "Phoenix2014 signer-independent SI5 test split (signer 5 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "corrnet-phoenix2014",
+      "original_value": 33.6
+    },
+    {
+      "target_id": "corrnet-arabsign-signer-dep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "ArabSign official Signer-Dep test split",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "corrnet-arabsign",
+      "original_value": 0.2265
+    },
+    {
+      "target_id": "corrnet-arabsign-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I (avg column of Table II)",
+      "split": "ArabSign leave-one-signer-out, 6 folds; value is the mean of the 6 per-signer WERs in Table II",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated; mean of 6 leave-one-signer-out folds",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "corrnet-arabsign",
+      "original_value": 7.65
+    },
+    {
+      "target_id": "corrnet-grsl-signer-indep",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous signer-independent split (signer 3 held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "corrnet-grsl",
+      "original_value": 1.5
+    },
+    {
+      "target_id": "corrnet-grsl-unseen-sent",
+      "in_scope": true,
+      "paper_location": "arXiv v1 p.5 Table I",
+      "split": "GrSL continuous unseen-sentence split (10% of sentences held out)",
+      "metric_id": "wer",
+      "unit": "percent WER (ArabSign Signer-Dep values are <1%, per text 'around 0.2% WER')",
+      "aggregation": "single reported number; seeds not stated",
+      "copied_baseline": false,
+      "copied_baseline_note": "Phoenix2014 Signer-Dep values are re-runs by the authors ('we reproduced the results ... around 1% fluctuations'), not copied from the original papers; all other columns are new benchmarks.",
+      "reproduction_plan": "Train with the pinned upstream repo and its configs/baseline.yaml, overriding only base_lr=0.001, num_epoch=40, step=[20,35] for every model (gate protocol-lr-epochs); batch 2, Adam, upstream augmentation (256->224 random crop, temporal rescale, hflip) and beam-search decoding; evaluate the dev-best checkpoint on the test split with the repo's sclite WER. Seed 0 (upstream default; paper states none).",
+      "experiment_id": "corrnet-grsl",
+      "original_value": 64.7
+    }
+  ],
+  "runs": [],
+  "artifacts": [],
+  "gates": [
+    {
+      "gate_id": "target-table-version",
+      "type": "target",
+      "status": "resolved",
+      "reason": "The assignment says 'Table 1'. The supplied PDF (arXiv v1, 2024) and the queue's venue (ICCVW 2025) contain materially different Table 1s: different model sets, datasets, training schedules and several changed values.",
+      "evidence": [
+        "arXiv v1 p.5 Table I: 5 models x 6 columns = 30 WERs",
+        "ICCVW 2025 p.5 Table 1: 7 models x 8 columns = 56 WERs; Section 3.3 gives 80-epoch schedules for TLP/SEN/SlowFastSign",
+        "Queue record: pdf_url=arxiv abs 2406.12369, venue=ICCVW 2025, year=2024, datasets list excludes CSL-Daily"
+      ],
+      "alternatives": [
+        {
+          "alternative_id": "arxiv-v1-table-I",
+          "description": "30 WERs: VAC, SMKD, TLP, SEN, CorrNet on Phoenix2014 SD/SI, ArabSign SD/SI (6-fold leave-one-signer-out avg), GrSL SI/Unseen-Sent; all 40 epochs.",
+          "paper_evidence": "Supplied PDF sha256 db652a81..., Table I and Sec. IV setup",
+          "decision_needed": "Confirm the supplied arXiv v1 PDF defines the target."
+        },
+        {
+          "alternative_id": "iccvw-2025-table-1",
+          "description": "56 WERs: adds Swin-MSTP and SlowFastSign rows and CSL-Daily Unseen-Sent/Signer-Indep columns; different epochs for TLP/SEN.",
+          "paper_evidence": "ICCVW PDF sha256 922a2038..., Table 1 and Sec. 3.3",
+          "decision_needed": "Choose the published venue version instead (roughly 2-3x the compute)."
+        }
+      ],
+      "required_action": "Operator chooses which paper version's Table 1 is the target.",
+      "resolution": {
+        "decided_at": "2026-10-26",
+        "decision": "arxiv-v1-table-I",
+        "basis": "Operator selected the arXiv v1 Table I (the supplied PDF) as the target in response to the target gate."
+      }
+    },
+    {
+      "gate_id": "protocol-lr-epochs",
+      "type": "protocol",
+      "status": "resolved",
+      "reason": "The paper's stated shared protocol conflicts with every pinned upstream config, and the choice changes training behavior.",
+      "evidence": [
+        "arXiv v1 Sec. IV 'Experiments Setup': 'We followed the same experimental settings described in each study' AND 'Adam ... 40 epochs ... batch size of 2 and an initial learning rate of 10^-3, reduced at epochs 20 and 35 by a factor of five'",
+        "VAC_CSLR@71f3e03, CorrNet@a812814, TLP@21be215, SEN@c9a4c7e configs/baseline.yaml: base_lr 0.0001",
+        "TLP and SEN upstream: num_epoch 80, step [40, 60]; ICCVW 2025 version Sec. 3.3 later states TLP/SEN were trained 80 epochs (steps 30, 60), still with lr 1e-3"
+      ],
+      "required_action": "Choose learning rate (paper 1e-3 vs upstream 1e-4) and TLP/SEN schedule (v1-stated 40 epochs/steps 20,35 vs upstream 80/steps 40,60) before any full run.",
+      "resolution": {
+        "decided_at": "2026-10-26",
+        "decision": "Use the arXiv v1 stated protocol for every model: Adam, base_lr 0.001, 40 epochs, lr x0.2 at epochs 20 and 35, batch 2. Each model otherwise runs its pinned upstream config unchanged (loss weights, augmentation, decoding).",
+        "basis": "Operator decision at the protocol gate after reviewing the paper text and the pinned upstream configs."
+      }
+    },
+    {
+      "gate_id": "compute-full-table",
+      "type": "compute",
+      "status": "open",
+      "reason": "Table I needs about 55 single-GPU trainings (Phoenix SD 5, Phoenix SI 5, ArabSign SD 5, ArabSign leave-one-signer-out 30, GrSL SI 5, GrSL Unseen-Sent 5); the projection far exceeds the 24 GPU-hour autonomous gate.",
+      "evidence": [
+        "Paper ICCVW Sec. 4: ~10 h per 40-epoch VAC/SMKD/CorrNet run on Phoenix2014/GrSL on one RTX A6000; ArabSign about half",
+        "papers/yu-2025-cvsign run full-phoenix14t-002: CorrNet-family model on PHOENIX14-T, one L40S, ~33 min/epoch incl. dev eval (heavier ResNet34 variant, 7096 train clips vs 5672 here)",
+        "Projection (40 epochs for all models): Phoenix SD ~65, Phoenix SI ~50, GrSL ~130, ArabSign SD ~75, ArabSign LOSO 30 runs ~150-450 L40S-hours; total roughly 400-800 GPU-hours, about USD 800-1,600 at L40S rates, before preflight measurement and retries"
+      ],
+      "required_action": "Discuss the full-table plan in #repro-sign-team-r (study budget CHF 20,000) and record the approved ceiling; a representative preflight will replace the projection with measured throughput."
+    }
+  ]
+}
