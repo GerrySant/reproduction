@@ -184,7 +184,11 @@ terminal classification, reason-code, and failure-class fields defined in
 `.agents/skills/reproduce-paper/references/stopping-criteria.md`. Declare ceilings
 before launch. Do not invent synonymous status or reason strings; put nuance in
 the detail field. Retrospective unknowns exist only for migrating already-
-committed evidence and may never hide a terminal classification.
+committed evidence and may never hide a terminal classification. If a run was
+launched without declared ceilings or without the cache environment, record it
+truthfully with `ceilings_declared: false` and a `ceilings_note`, or null cache
+variables and an `environment_note`; never backfill. The validator reports these
+as warnings, and the report discloses them as process deviations.
 
 Monitor remote jobs to a terminal state, collect logs and outputs, and evaluate all targets. Do not treat job submission as completion.
 
